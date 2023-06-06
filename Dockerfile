@@ -1,4 +1,4 @@
-# Install R version 4.0.5
+# Install R version 4.1.2
 FROM r-base:4.1.2
 
 # Install Ubuntu packages
@@ -40,7 +40,7 @@ RUN rm -rf /srv/shiny-server/*
 
 # Get the app code
 RUN git clone https://github.com/uvarc/chickweight.git
-COPY chickweight/* /srv/shiny-server/
+RUN cp -r chickweight/* /srv/shiny-server/
 RUN rm -rf chickweight
 
 # Make the ShinyApp available at port 80
