@@ -14,7 +14,7 @@ mytheme <- create_theme(
 )
 
 ui <- dashboardPage(
-  dashboardHeader(title = "Chick Weight"),
+  dashboardHeader(title = "Chick Weight :)"),
   dashboardSidebar(sliderInput("time", "Days Since Birth", 0, 20, 0, step = 2),
                    sidebarMenu(
                      menuItem("Dashboard", tabName = "dashboard"),
